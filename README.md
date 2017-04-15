@@ -16,7 +16,7 @@ Esse é o proposito deste repositório. É preparar e mostrar os padrões das bi
 ```
 
 #### Por que não usar o return?
-Sim, nesse caso o return seria o ideal, mas se fossemos pensar em um caso diferente como o de um click, ou alguma coisa que é assincrona seria o mais correto a se fazer.
+Sim, nesse caso o return seria o ideal, mas se nos depararmos com um caso diferente como o de um click ou alguma ação que é assíncrona, seria o mais correto a se fazer. Pois ao criar um callback, você desprende o código de uma execução síncrona, deixando assim, a possibilidade de chamar o seu callback apenas quando a sua operação estiver pronta.
 ##### Como por exemplo:
 ```javascript
   function showAlertTextWithDelay(text, seconds, onAlertShow){
@@ -50,5 +50,6 @@ Sim, nesse caso o return seria o ideal, mas se fossemos pensar em um caso difere
 - [ ] Promises
 - [ ] Dom Manipulation
 - [ ] Http Requests
+- [X] Callback
 
 Por favor, contribua para esse projeto =), eu não gosto de ver as pessoas passando pelo que eu passei.

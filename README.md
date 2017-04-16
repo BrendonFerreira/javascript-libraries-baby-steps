@@ -53,7 +53,7 @@ Sim, nesse caso o return seria o ideal, mas se nos depararmos com um caso difere
     // Acesso ao scope do controller
   })
 ```
-> Dica. Não use uma variável para guardar a instancia de seu modulo, como é muito visto pelos "step-by-step" por ai. Fazendo isso você pode dar um acesso global para sua aplicação, dando a liberdade de uma possível invasão.
+> Dica. Não use uma variável para guardar a instancia de seu modulo, como é muito encontrado nos "step-by-step" por ai. Fazendo isso você pode dar um acesso global para sua aplicação, dando a liberdade de uma possível invasão.
 
 # Future steps
 

@@ -6,12 +6,12 @@ Esse é o proposito deste repositório. É preparar e mostrar os padrões das bi
 ## Primeiro passo - callbacks
 
 ```javascript
-  function sum( input, outputTunnel ) {
-    outputTunnel( input ); 
+  function aoQuadrado( numero, outputTunnel ) {
+    outputTunnel( numero * numero ); 
   }
   
-  sum( 2, function(output) { 
-    console.log(output);
+  aoQuadrado( 2, function(output) { 
+    console.log(output); // retorno: 4
   }) 
 ```
 
@@ -38,12 +38,22 @@ Sim, nesse caso o return seria o ideal, mas se nos depararmos com um caso difere
 #### Jquery
 ```javascript
 
-  $('elementoDom').on('click', onClickCallback)
+  var onClickCallback = function(event){
+    // Aqui voce terá acesso aos dados do evento
+  }
+
+  $('elementoDom').click(onClickCallback)
 
 ```
+#### Angular
+```javascript
 
-
-
+  angular.module('MyApp',[])
+  angular.module('MyApp').controller('MyController', function ($scope){
+    // Acesso ao scope do controller
+  })
+```
+> Dica. Não use uma variável para guardar a instancia de seu modulo, como é muito visto pelos "step-by-step" por ai. Fazendo isso você pode dar um acesso global para sua aplicação, dando a liberdade de uma possível invasão.
 
 # Future steps
 

@@ -55,10 +55,28 @@ Sim, nesse caso o return seria o ideal, mas se nos depararmos com um caso difere
 ```
 > Dica. Não use uma variável para guardar a instancia de seu modulo, como é muito encontrado nos "step-by-step" por ai. Fazendo isso você pode dar um acesso global para sua aplicação, dando a liberdade de uma possível invasão.
 
+## Segundo passo - Manipulação DOM
+Já vi pessoas utilizando jQuery apenas pelo seletor de elementos dom. Sim, é bom, é garantido. Mas dependendo de sua aplicação, essa lib pode ser um peso dispensável devido as novas features implementas pelos navegadores.
+
+#### Vanilla
+```javascript
+  document.querySelector('#idDoMeuElemento.classeDoMeuElemento') // Unico elemento
+  document.querySelectorAll('#idDosMeusElementos.classeDosMeusElementos') // Array resultando na seleção
+```
+#### jQuery
+```javascript
+  $('#idDoMeuElemento.classeDoMeuElemento')
+  $('#idDosMeusElementos.classeDosMeusElementos')
+```
+
+Obs. Não são todos os navegadores que suportam o `querySelector`.
+[Link para a tabela de compatibilidade](https://caniuse.com/#search=querySelector)
+
+
 # Future steps
 
 - [ ] Promises
-- [ ] Dom Manipulation
+- [X] Dom Selection
 - [ ] Http Requests
 - [X] Callback
 

@@ -72,12 +72,14 @@ Já vi pessoas utilizando jQuery apenas pelo seletor de elementos dom. Sim, é b
 Obs. Não são todos os navegadores que suportam o `querySelector`.
 [Link para a tabela de compatibilidade](https://caniuse.com/#search=querySelector)
 
-
 # Future steps
 
 - [ ] Promises
 - [X] Dom Selection
 - [ ] Http Requests
 - [X] Callback
+- [ ] Uso do this, e bind
+- [ ] Filters
+- [ ] ES6 things
 
 Por favor, contribua para esse projeto =), eu não gosto de ver as pessoas passando pelo que eu passei.
